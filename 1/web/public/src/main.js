@@ -3,6 +3,9 @@ import {formatError} from "./utils.js";
 import {formSwitch} from "./switch.js";
 import {startTimer} from "./timer.js";
 
+import "../css/style.css";
+import "../media/death.mp3";
+
 formSwitch();
 
 //datecalc

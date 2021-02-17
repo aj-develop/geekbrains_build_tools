@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datetime superapp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<script defer src="main38ad4bf361d767d63163.js"></script><link href="main.8e2cef8dd8920fffaf5e.css" rel="stylesheet"></head>
+<body>
+<table class="table .table-borderless">
+    <thead>
+    <tr>
+        <td style="width: 50%"><h2 id="head_datecalc" data-group="datecalc">Калькулятор дат</h2></td>
+        <td style="width: 50%"><h2 id="head_timer" data-group="timer">Таймер</h2></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td colspan="2">
+            <form id="datecalc" data-group="datecalc" style="display: none">
+                <label>
+                    <strong>Первая дата:</strong><br>
+                    <input type="date" name="firstDate"/>
+                </label><br>
+                <label>
+                    <strong>Вторая дата:</strong><br>
+                    <input type="date" name="secondDate"/>
+                </label><br>
+                <button type="submit">Расчитать промежуток</button>
+                <p id="datecalc__result"></p>
+            </form>
+            <form id="timer" data-group="timer">
+                <h3>Установите время:</h3>
+                <label>Часы<br>
+                    <input type="number" name="hours" min="0" value="0">
+                </label>
+                <label>Минуты<br>
+                    <input type="number" name="minutes" min="0" value="0">
+                </label>
+                <label>Секунды<br>
+                    <input type="number" name="seconds" min="0" value="0">
+                </label>
+                <br><br>
+                <button id="startButton" type="submit">Старт</button>
+                <button id="stopButton" type="button">Стоп</button>
+                <p id="timer__result"></p>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>
