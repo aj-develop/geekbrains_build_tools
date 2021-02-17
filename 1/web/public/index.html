@@ -13,14 +13,14 @@
 <table class="table .table-borderless">
     <thead>
     <tr>
-        <td><h3 id="head_datecalc" data-group="datecalc">Калькулятор дат</h3></td>
-        <td><h3 id="head_timer" data-group="timer">Таймер</h3></td>
+        <td style="width: 50%"><h2 id="head_datecalc" data-group="datecalc">Калькулятор дат</h2></td>
+        <td style="width: 50%"><h2 id="head_timer" data-group="timer">Таймер</h2></td>
     </tr>
     </thead>
     <tbody>
     <tr>
         <td colspan="2">
-            <form id="datecalc" data-group="datecalc">
+            <form id="datecalc" data-group="datecalc" style="display: none">
                 <label>
                     <strong>Первая дата:</strong><br>
                     <input type="date" name="firstDate"/>
@@ -32,8 +32,21 @@
                 <button type="submit">Расчитать промежуток</button>
                 <p id="datecalc__result"></p>
             </form>
-            <form id="timer" data-group="timer" style="display: none">
-                Timer
+            <form id="timer" data-group="timer">
+                <h3>Установите время:</h3>
+                <label>Часы<br>
+                    <input type="number" name="hours" min="0" value="0">
+                </label>
+                <label>Минуты<br>
+                    <input type="number" name="minutes" min="0" value="0">
+                </label>
+                <label>Секунды<br>
+                    <input type="number" name="seconds" min="0" value="0">
+                </label>
+                <br><br>
+                <button id="startButton" type="submit">Старт</button>
+                <button id="stopButton" type="button">Стоп</button>
+                <p id="timer__result"></p>
             </form>
         </td>
     </tr>
